@@ -1,0 +1,222 @@
+package EpamTraning;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task {
+    public static void main(String[] args) {
+
+
+        //Task1
+        /*int a = (int) (Math.random()*10);
+        int b = (int) (Math.random()*10);
+        int c = (int) (Math.random()*10);
+        int z = ((a-3)*b/2)+c;
+        System.out.println(z);*/
+
+        //Task2
+        /*double a = (int) (Math.random()*10);
+        double a2 =3;
+        double b = (int) (Math.random()*10);
+        double b2 =2;
+        double b3 =-2;
+        double c = (int) (Math.random()*10);
+        double z = (b +Math.sqrt(Math.pow(b, b2)+4*a*c)/2*a)-Math.pow(a,a2)*c+Math.pow(b,b3);
+        System.out.println(z);*/
+
+        //Task3
+        /*int x = 30;
+        int y = 60;
+        int z = (int) (((Math.sin(x)+Math.cos(y))/Math.cos(x)-Math.sin(y))*Math.tan(x*y));
+        System.out.println(z);*/
+
+        //Task4
+       /* double x = 123.456;
+        String old = Double.toString(x);
+        String partStr = Double.toString(x);
+        StringBuilder part = new StringBuilder(partStr);
+        part.reverse();
+        String newStr = old.replace(partStr, part.toString());
+        System.out.println(newStr);*/
+
+        //Task 5
+        /*int a= 5000;
+        int b = a/60;
+        int c = b/60;
+        System.out.println(c+"ч, "+b+"мин, "+a+"сек.");*/
+
+
+        /*//Task6
+        int x=1;
+        int y =2;
+        boolean m =(x>=-4 && x<=4 && y>=-3 && y<=0 || x>=-2 && x<=2 && y>=0 && y<=4);
+        System.out.println(m);*/
+
+
+       /* int A =110;
+        int B =50;
+        int C =180-A-B;
+        if (A==90 || B==90 || C==90) {
+            System.out.println("Прямоуголный");
+        }
+        else if (A>90 || B>90 || C>90){
+                System.out.println("Тупоугольный");
+            }
+        else if (A+B+C<180){
+            System.out.println("Такого треугольник а не существует ");
+        }
+        else {
+            System.out.println("Остроугольный ");
+        }*/
+
+
+       /* int a = 3;
+        int b = 3;
+        int c = 7;
+        int d = 2;
+        int max;
+        int min1;
+        int min2;
+        min1 = Math.min(a, b);
+        min2 = Math.min(c, d);
+        if (min1 < min2) {
+            max = min1;
+        } else {
+            max = min2;
+        }
+        System.out.println(max);
+    }*/
+
+
+        /*int x1 = 2;
+        int x2 = 2;
+        int x3 = 2;
+        int y1 = 2;
+        int y2 = 2;
+        int y3 = 2;
+
+        if (x1 == x2 && x1 == x3 && x2 == x3 && y1 == y2 && y1 == y3 && y2 == y3) {
+            System.out.println("Точки лежат на одной прямой");
+        } else {
+            System.out.println("Точки не лежат на одной прямой");
+        }*/
+
+
+        /*int A =60;
+        int B=40;
+        int x=40;
+        int y =70;
+        int z =30;
+        if (x<=A && y<=B || x<=A && z<=B ||
+            y<=A && x<=B || z<=A && x<=B ||
+            y<=A && z<=B || z<=A && y<=B){
+            System.out.println("Кирпич пройдёт");
+        } else {
+            System.out.println("Кирпич не пройдёт");
+        }*/
+
+
+       /* int x =5;
+        int x1= 2;
+        int x2 =3;
+        int F;
+         if (x<=3){
+              F = (int) (Math.pow(x,x1)-3*x+9);
+             System.out.println(F);
+         }
+         else {
+             F = (int) (1/(Math.pow(x, x2)+6));
+             System.out.println(F);
+
+        }*/
+
+       /* Scanner scanner = new Scanner(System.in);
+        String s =scanner.nextLine();
+        int x;
+        int sum = 0;
+        int i = Integer.parseInt(s);
+        for ( x=1; x<=i; x++  ){
+            sum = x+sum;
+            System.out.println(sum);
+        }
+        */
+
+       /*int x;
+       int sum1;
+       int sum =0;
+       for (x=1; x<=100; x++){
+           sum = sum +x*x;
+           sum1 =sum;
+           System.out.println(sum1);
+
+       }*/
+
+      /*  int x;
+        int sum =0;
+        for (x=1; x<=200; x++){
+            sum = sum +x*x;
+            System.out.println(sum);
+
+        }*/
+
+      /*Scanner scanner = new Scanner(System.in);
+      Scanner scanner1 = new Scanner(System.in);
+      String s = scanner.nextLine();
+      String d = scanner1.nextLine();
+      int x = Integer.parseInt(s);
+      int y = Integer.parseInt(d);
+
+      for (int z=x; z<y; z++) {
+              for (int i=2; i!=z||i>=y; i++ ){
+                  if (z%i==0)
+                  System.out.println(i);
+              }
+          }*/
+        int x;
+        try {
+            x = System.in.read();
+            char c = (char) x;
+            System.out.println("код символа: " + c + " =" + x);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("ошибка ввода" +e);
+        }
+
+
+      /*int y =473583;
+      int x = 134;
+      String s = String.valueOf(x);
+      String d = String.valueOf(y);
+      char [] srt = d.toCharArray();
+      char [] str = s.toCharArray();
+      for (int u =0; u<srt.length; u++)
+          System.out.println(srt[u]);
+      for (int i =0; i<str.length; i++)
+        System.out.println(str[i]);*/
+
+
+     /*int array [] = new int[] {2,5,4,8,10,25,41,40,98,60,7,9,23,45};
+     int x =2;
+     int sum =0;
+     for (int i=0; i<13; i++){
+         if (array[i]%x==0){
+             sum = sum +array[i];
+             System.out.println(sum);
+         }
+     }*/
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
